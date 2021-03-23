@@ -1,0 +1,143 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+clear: both;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  color: #0c0f0a;
+  background-color: #EBE0CE;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+}
+
+
+h1{
+  font-family: 'RocknRoll One', san-serif;
+  font-size: 2.5rem;
+  margin-right: 55px;
+}
+
+span{
+  color:#D80D05;
+}
+
+a{
+  color: #0c0f0a;
+  text-decoration: none;
+}
+header{
+  padding: 0px 0px 0px 40px;
+}
+
+header>nav a:hover {
+  color: #D80D05;
+  text-decoration: underline 2px #0c0f0a;
+}
+
+header nav{
+  float: right;
+  width: 50%;
+  margin: 20px 0px 0px 0px;
+}
+
+header>nav> ul li{
+  padding: 10px 40px;
+}
+
+ nav ul, li{
+  display: inline;
+}
+
+button{
+  padding: 10px 60px;
+  border-radius: 5px;
+  font-family: 'Lato',sans-serif;
+  font-size: 1.1rem;
+  border: 0.5px solid #D80D05;
+  color: white;
+  background: #D80D05;
+  box-shadow: -10px 10px 2px rgb(209, 209, 209) ;
+  cursor: pointer;
+}
+
+button:hover{
+  background: #cc110b;
+}
+
+.inner1{
+  margin-top:50px;
+  margin-bottom: 100px;
+  padding: 0px 90px 0px 40px;
+  float: left;
+  width:50%;
+}
+
+.inner{
+  padding-right: 50px;
+  float: right;
+  width:50%;
+}
+
+/* Make an image float */
+
+@keyframes floating{
+  0%{ transform: translate(0,0px);}
+  50%{ transform: translate(0,15px)}
+  100%{transform: translate(0,-0px);}
+}
+
+.inner> img{
+  animation-name: floating;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* animation end */
+
+footer{
+  clear: both;
+}
+
+footer nav{
+  float: left;
+  width: 30%;
+}
+
+footer hr{
+  margin-top: 100px;
+  border: 1px solid #D80D05;
+}
+footer nav li{
+  padding:10px;
+}
+
+footer>nav a{
+  color: #D80D05;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
